@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <title>SoundWave</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/satoshi.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+
+    <body>
+
+        <header>            
+            <h1>SoundWave</h1>
+    
+            <nav>
+                <!--Barra de pesquisa-->
+                <div class="pesquisar">                
+                    <input type="text" id="barraDePesquisa" placeholder="Pesquisar..." onfocus="barraSel()" onfocusout="barraNotSel()">
+                    <i><img src="" alt="lupa"></i>
+                </div>
+                <!--botões para configurações de estilo/layout-->
+                <div class="opt">
+                    <a id="mudar-tema">
+                        <i>
+                            <img id="tema" src="imgs/dark-mode.png" alt="Alterar tema" width="45px" height="40px">
+                        </i>
+                    </a>
+                    <button id="esconder-aside">XCXXX</button>
+                </div>
+            </nav>
+        </header>
+
+        <aside>
+            <p>Texto de exemplo</p>
+        </aside>
+
+        <main>
+            <section>
+                <h2>Bem-vindo</h2>
+                <p>Explore os álbuns e músicas de seus artistas favoritos.</p>
+                
+                <a href="#" style="float: right;">Ver todos</a>
+                <table>
+                    <tr>
+                        <td><a href="genre.html">Pop</a></td>                        
+                        <td>Rock</td>    
+                        <td>R&B</td>            
+                        <td>Disco</td>
+                        <td>K-pop</td>                        
+                    </tr>
+                    <tr>
+                        <td>Pop</td>                        
+                        <td>Rock</td>    
+                        <td>R&B</td>            
+                        <td>Disco</td>
+                        <td>K-pop</td>                                      
+                    </tr>
+                </table>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 St</p>
+        </footer>        
+    </body>
+
+</html>
