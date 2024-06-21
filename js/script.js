@@ -8,23 +8,45 @@ $(function() {
         });
     });*/  
 
+var hidden = false
     $("#esconder-aside").click(function() {        
         $("aside").toggle();  
+        
+        if(hidden==false){
+            $("main").css("width", "100%");
+
+            $(".container").css({
+                "width": "80%", 
+                "margin-left": "10em",
+            });   
+            
+            hidden = true;
+        }else{
+            $("main").css("width", "70%");
+
+            $(".container").css({
+                "width": "100%", 
+                "margin-left": "1em",
+            }); 
+
+            hidden = false;
+        }
+    
     });
 
-var darkTheme = false;
+var darkTheme = true;
     $("#mudar-tema").click(function() {
         if(darkTheme==false){
 
             $("#tema").attr("src", "imgs/white-mode.png");
 
             $("body").css({
-                "background-color": "black",
+                "background-color": "#0e0e0e",
                 "color": "white"
             });
 
             $("aside").css({
-                "background-color": "gray"
+                "background-color": "#333"
             });
             
             darkTheme = true;
@@ -38,8 +60,8 @@ var darkTheme = false;
             });
 
             $("aside").css({
-                "background-color": "bisque"
-            });
+                "background-color": "#333"
+            });                
 
             darkTheme = false;
         }
