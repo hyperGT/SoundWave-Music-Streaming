@@ -2,33 +2,48 @@
 <html lang="pt">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SoundWave/Pop</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/satoshi.css">
-    <link rel="stylesheet" href="css/genre.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>        
-    <script src="js/script.js"></script>
+        <title>SoundWave/Pop</title>
+        <link rel="icon" type="image/x-icon" href="imgs/logo/logo_soundwave.png">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/genre.css">
+        <link rel="stylesheet" href="css/satoshi.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="js/script.js"></script>
 </head>
 <body>
 
-    <header>            
-        <h1>SoundWave</h1>
+    <header>  
+        <a href="#">
+            <img style="margin-right: 0.5em;" src="imgs/logo/logo_soundwave.png" alt="Logo" width="50" height="50">
+            <h1>SoundWave</h1>
+        </a>          
 
         <nav>
-            <!--Barra de pesquisa-->
             <div class="pesquisar">                
-                <input type="text" id="barraDePesquisa" placeholder="Pesquisar..." onfocus="barraSel()" onfocusout="barraNotSel()">
-                <i><img src="" alt="lupa"></i>
+                <!--Barra de pesquisa-->
+                <ul>
+                    <li>
+                        <input type="text" id="barraDePesquisa" placeholder="Pesquisar..." onfocus="barraSel()" onfocusout="barraNotSel()">
+                    </li>
+                    <li>
+                        <img id="lupa" src="imgs/buttons/search dark.png" alt="lupa" width="25px" height="25px">
+                    </li>
+                </ul>
             </div>
             <!--botões para configurações de estilo/layout-->
-            <div class="opt">
-                <a id="mudar-tema">
-                    <i>
-                        <img id="tema" src="imgs/dark-mode.png" alt="Alterar tema" width="45px" height="40px">
-                    </i>
-                </a>
-                <button id="esconder-aside">XCXXX</button>
+            <div class="options">
+                <ul>
+                    <li>
+                        <button id="mudar-tema">                         
+                                <img id="tema" src="imgs/buttons/sun.png" alt="Alterar tema" width="25px" height="25px">                                                
+                        </button>
+                    </li>
+                    <li>
+                        <button id="esconder-aside">
+                            <img id="esconder" src="imgs/buttons/burger dark.png" alt="Esconder barra lateral" width="25px" height="25px">
+                        </button>
+                    </li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -43,53 +58,131 @@
             <h3 style="margin-left: 3em;">Seus artistas favoritos em um só lugar.</p>
             
                 <table id="tabela-artistas">
+                    <!--Primeira linha-->
                     <tr>
                         <td class="artista-card">
                             <a href="artist.html" target="_blank">
                                 <img src="imgs/artistas-pop/Michael Jackson 100px.jpg" alt="Michael Jackson">
+                                <figcaption>Michael Jackson</figcaption>
                             </a>
-
-                            <figcaption>Michael Jackson</figcaption>
                         </td>    
                         <td class="artista-card">
-                            <a href="artist.html" target="_blank">
-                                <img src="imgs/artistas-pop/Michael Jackson 100px.jpg" alt="Michael Jackson">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Cyndi Lauper.jpg" alt="Cyndi Lauper">
+                                <figcaption>Cyndi Lauper</figcaption>
                             </a>
-
-                            <figcaption>Michael Jackson</figcaption>
                         </td> 
                         <td class="artista-card">
-                            <a href="artist.html" target="_blank">
-                                <img src="imgs/artistas-pop/Michael Jackson 100px.jpg" alt="Michael Jackson">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Ariana Grande.jpg" alt="Ariana Grande">
+                                <figcaption>Ariana Grande</figcaption>
                             </a>
-
-                            <figcaption>Michael Jackson</figcaption>
                         </td> 
                         <td class="artista-card">
-                            <a href="artist.html" target="_blank">
-                                <img src="imgs/artistas-pop/Michael Jackson 100px.jpg" alt="Michael Jackson">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Britney Spears.jpg" alt="Britney Spears">
+                                <figcaption>Britney Spears</figcaption>
                             </a>
-
-                            <figcaption>Michael Jackson</figcaption>
                         </td> 
                         <td class="artista-card">
-                            <a href="artist.html" target="_blank">
-                                <img src="imgs/artistas-pop/Michael Jackson 100px.jpg" alt="Michael Jackson">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Dua Lipa.jpg" alt="Dua Lipa">
+                                <figcaption>Dua Lipa</figcaption>
                             </a>
-
-                            <figcaption>Michael Jackson</figcaption>
                         </td> 
                         <td class="artista-card">
-                            <a href="artist.html" target="_blank">
-                                <img src="imgs/artistas-pop/Michael Jackson 100px.jpg" alt="Michael Jackson">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Bruno Mars.jpg" alt="Bruno Mars">
+                                <figcaption>Bruno Mars</figcaption>
                             </a>
+                        </td>
+                    </tr>
+                    <!--segunda linha-->
+                    <tr>
+                        <td class="artista-card">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Jennifer Lopez.jpg" alt="Jennifer Lopez">
+                                <figcaption>Jennifer Lopez</figcaption>
+                            </a>
+                        </td>
+                        <td class="artista-card">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Billie Eilish.jpg" alt="Billie Eilish">
+                                <figcaption>Billie Eilish</figcaption>
+                            </a>
+                        </td>
+                        <td class="artista-card">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Harry Styles.jpg" alt="Harry Styles">
+                                <figcaption>Harry Styles</figcaption>
+                            </a>
+                        </td>
+                        <td class="artista-card">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Madonna.jpg" alt="Madonna">
+                                <figcaption>Madonna</figcaption>
+                            </a>
+                        </td>
+                        <td class="artista-card">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Lady Gaga.jpg" alt="Lady Gaga">
+                                <figcaption>Lady Gaga</figcaption>
+                            </a>
+                        </td>
+                        <td class="artista-card">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Shakira.jpg" alt="Shakira">
+                                <figcaption>Shakira</figcaption>
+                            </a>
+                        </td>
+                    </tr>
 
-                            <figcaption>Michael Jackson</figcaption>
-                        </td>                      
+                    <!--Terceira linha-->
+                    <tr>
+                        <td class="artista-card">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Justin Timberlake.jpg" alt="Justin Timberlake">
+                                <figcaption>Justin Timberlake</figcaption>
+                            </a>
+                        </td>
+                        <td class="artista-card">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Beyoncé.jpg" alt="Beyoncé">
+                                <figcaption>Beyoncé</figcaption>
+                            </a>
+                        </td>
+                        <td class="artista-card">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Rihanna.jpg" alt="Rihanna">
+                                <figcaption>Rihanna</figcaption>
+                            </a>
+                        </td>
+                        <td class="artista-card">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Katy Perry.jpg" alt="Katy Perry">
+                                <figcaption>Katy Perry</figcaption>
+                            </a>
+                        </td>
+                        <td class="artista-card">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/The Weeknd.jpg" alt="The Weeknd">
+                                <figcaption>The Weeknd</figcaption>
+                            </a>
+                        </td>
+                        <td class="artista-card">
+                            <a href="#" target="_blank">
+                                <img src="imgs/artistas-pop/Whitney Houston.jpg" alt="Whitney Houston">
+                                <figcaption>Whitney Houston</figcaption>
+                            </a>
+                        </td>
                     </tr>
                 </table>
         </section>
     </main>
     
+    <footer>
+        <p>&copy; 2024 SoundWave</p>
+    </footer>  
+
 </body>
 </html>

@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>SoundWave</title>
+        <link rel="icon" type="image/x-icon" href="imgs/logo/logo_soundwave.png">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/satoshi.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -11,23 +12,38 @@
 
     <body>
 
-        <header>            
-            <h1>SoundWave</h1>
+        <header>  
+            <a href="#">
+                <img style="margin-right: 0.5em;" src="imgs/logo/logo_soundwave.png" alt="Logo" width="50" height="50">
+                <h1>SoundWave</h1>
+            </a>          
 
             <nav>
-                <!--Barra de pesquisa-->
                 <div class="pesquisar">                
-                    <input type="text" id="barraDePesquisa" placeholder="Pesquisar..." onfocus="barraSel()" onfocusout="barraNotSel()">
-                    <i><img src="" alt="lupa"></i>
+                    <!--Barra de pesquisa-->
+                    <ul>
+                        <li>
+                            <input type="text" id="barraDePesquisa" placeholder="Pesquisar..." onfocus="barraSel()" onfocusout="barraNotSel()">
+                        </li>
+                        <li>
+                            <img id="lupa" src="imgs/buttons/search dark.png" alt="lupa" width="25px" height="25px">
+                        </li>
+                    </ul>
                 </div>
                 <!--botões para configurações de estilo/layout-->
-                <div class="opt">
-                    <a id="mudar-tema">
-                        <i>
-                            <img id="tema" src="imgs/white-mode.png" alt="Alterar tema" width="45px" height="40px">
-                        </i>
-                    </a>
-                    <button id="esconder-aside">XCXXX</button>
+                <div class="options">
+                    <ul>
+                        <li>
+                            <button id="mudar-tema">                         
+                                    <img id="tema" src="imgs/buttons/sun.png" alt="Alterar tema" width="25px" height="25px">                                                
+                            </button>
+                        </li>
+                        <li>
+                            <button id="esconder-aside">
+                                <img id="esconder" src="imgs/buttons/burger dark.png" alt="Esconder barra lateral" width="25px" height="25px">
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
@@ -38,8 +54,8 @@
 
         <main>
             <section class="generos">
-                <h2 style="margin-left: 2em;">Bem-vindo</h2>
-                <p style="margin-left: 3em;">Explore os álbuns e músicas de seus artistas favoritos.</p>
+                <h2 style="margin-left: 2em; margin-top:0.5em;">Bem-vindo</h2>
+                <p style="margin-left: 3em; margin-top:1em;">Explore os álbuns e músicas de seus artistas favoritos.</p>
                 
                 <!--<a class="ver" href="#" style="float: right;">Ver todos</a> -->
                

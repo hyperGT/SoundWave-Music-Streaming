@@ -9,7 +9,7 @@ $(function() {
     });*/  
 
 var hidden = false
-    $("#esconder-aside").click(function() {        
+    $("#esconder-aside").click(function() {
         $("aside").toggle();  
         
         if(hidden==false){
@@ -36,11 +36,22 @@ var hidden = false
 
 var darkTheme = true;
     $("#mudar-tema").click(function() {
-        if(darkTheme==false){
+        if(darkTheme==false){ // se o modo escuro não estiver ativado
 
-            $("#tema").attr("src", "imgs/white-mode.png");
+            // trocando o atributo src das imagens dos botões da nav bar
+            $("#tema").attr("src", "imgs/buttons/sun.png");            
+
+            $("#esconder").attr("src", "imgs/buttons/burger dark.png");
+
+            $("#lupa").attr("src", "imgs/buttons/search dark.png");
 
             // mudando as cores para o tema escuro
+            $("figcaption").css("color", "white");
+            
+            $("header").css({
+                "background-color": "#333"
+            });
+
             $("body").css({
                 "background-color": "#0e0e0e",
                 "color": "white"
@@ -49,21 +60,40 @@ var darkTheme = true;
             $("aside").css({
                 "background-color": "#333"
             });
+
+            $("footer").css({
+                "background-color": "#333"
+            });
                         
             darkTheme = true;
         }else{
 
-            $("#tema").attr("src", "imgs/dark-mode.png");
+            // trocando o atributo src da imagem do botão trocar tema
+            $("#tema").attr("src", "imgs/buttons/moon.png");
+
+            $("#esconder").attr("src", "imgs/buttons/burger light.png");
+
+            $("#lupa").attr("src", "imgs/buttons/search light.png");
 
             // mudando as cores para o tema claro
+            $("figcaption").css("color", "#1c1d1c");
+
+            $("header").css({
+                "background-color": "#3CB371"
+            });
+
             $("body").css({
                 "background-color": "#fff",
                 "color": "#1c1d1c"
             });
 
             $("aside").css({
-                "background-color": "#333"
-            });                
+                "background-color": "#3CB371"
+            });
+
+            $("footer").css({
+                "background-color": "#3CB371"
+            });
 
             darkTheme = false;
         }

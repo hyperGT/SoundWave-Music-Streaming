@@ -1,18 +1,27 @@
 @import url('satoshi.css'); /*Importando a fonte*/
 
-
 #tabela-artistas{
-    width: 100%;
+    width: 100%;  
+    margin-top: 3em;  
 }
 
-.artista-card{
-    align-items: center;
-    background-color: brown;    
+#tabela-artistas td{
+    text-align: center;      
+}
+
+.artista-card {
+    /*vertical-align: middle;*/
+    /*background-color: brown;*/
+    padding: 15px;
+}
+
+.artista-card a{    
+    text-decoration: none;
+    color: white;
 }
 
 .artista-card img{
-    vertical-align: middle;
-    margin-left: 6px;
+    vertical-align: middle;    
 }
 
 figcaption{

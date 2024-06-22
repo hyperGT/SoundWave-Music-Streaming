@@ -5,14 +5,14 @@ html{
 }
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body{
     font-family: 'Satoshi-Variable';
     color: white;
-    margin: 0;
-    padding: 0;
     /*box-sizing: border-box;*/
     background-color: #0e0e0e;
 }
@@ -21,7 +21,8 @@ header, footer{
     height: 80px;
     background-color: #333;
     color: #fff; 
-    
+    align-items: center;
+    justify-content: center;
 }
 
 header{
@@ -32,44 +33,45 @@ header{
     z-index:1000;
     padding: 0.2em 1em;    
     display: flex;       
-    flex-direction: row;    
-    align-items: center;
+    flex-direction: row;        
 }
-/*
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1200px;
-    padding: 0 1em;
-}
-*/
-/*header div{
-    background-color: aqua;
-    margin-top: 1em;
-    margin-left: 10em;
-}*/
 
-nav{
+header a{
     display: flex;    
+    text-decoration: none;    
+    color: white;
+}
+
+
+/*barra de navegação*/
+nav{
+    display: flex;     
     /*background-color: aquamarine;*/
     width: 80%;
-    float: right;
-    align-items: center;
-    margin-left: 5em;    
+    float: right;       
+    align-items: center;  
+    margin-left: 10em;
 }
 
-.pesquisar{
-    margin-left: 6em;
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.pesquisar li{
+    margin-left: 1em;
 }
 
 #barraDePesquisa{
     padding: 0.5em;
-    font-size: 1em;
+    font-size: 1em;    
     width: 400px;
-    /*border: deepskyblue; usado para teste*/
     background-color: #1c1d1c;
 }
+
 
 input::placeholder {
     color:white;
@@ -88,8 +90,8 @@ main{
 /*rodapé*/
 footer{
     width: 100%;
-    padding: 1em 0;    
-    text-align: center;      
+    padding: 1em 0;  
+    text-align: center;  
 }
 
 /*Barra lateral*/
@@ -132,37 +134,32 @@ aside{
 }
 
 /*campo dos botões*/
-.opt{
+.options{
     width: 100px;
     height: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;  
     margin-right: 5em;
-    position: absolute;
+    position: absolute;    
     right: 0;
 }
+/*
+.options li{
+    width: 50px;
+}*/
 
-button{
+.options button{
     text-decoration: none;
-    border: 1px solid white;    
-    border-radius: 50%;
-    cursor: pointer;     
-    background:white;
-    /*margin-left: 1em;*/
+    border: transparent; 
+    background-color: transparent;       
+    cursor: pointer;  
+    width: 50px;
+    height: 50px;
 }
 
-i{
-    cursor: pointer; 
-    display: inline-block;
-    font-size: normal !important;       
-}
 
-i:hover{
+.options button:hover{
     background-color: rgba(220, 220, 220, 0.4);
     border-radius: 50%;
 }
-/*
-#theme-icon{
-   
-}*/
