@@ -1,1 +1,21 @@
 @import url('satoshi.css'); /*Importando a fonte*/
+
+
+#tabela-artistas{
+    width: 100%;
+}
+
+.artista-card{
+    align-items: center;
+    background-color: brown;    
+}
+
+.artista-card img{
+    vertical-align: middle;
+    margin-left: 6px;
+}
+
+figcaption{
+    font-family: 'Satoshi-Light';
+    font-size: smaller;
+}

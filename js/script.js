@@ -16,13 +16,13 @@ var hidden = false
             $("main").css("width", "100%");
 
             $(".container").css({
-                "width": "80%", 
-                "margin-left": "10em",
+                "width": "80%",
+                "margin-left": "10em"                
             });   
             
             hidden = true;
         }else{
-            $("main").css("width", "70%");
+            $("main").css("width", "80%");
 
             $(".container").css({
                 "width": "100%", 
@@ -40,6 +40,7 @@ var darkTheme = true;
 
             $("#tema").attr("src", "imgs/white-mode.png");
 
+            // mudando as cores para o tema escuro
             $("body").css({
                 "background-color": "#0e0e0e",
                 "color": "white"
@@ -48,15 +49,16 @@ var darkTheme = true;
             $("aside").css({
                 "background-color": "#333"
             });
-            
+                        
             darkTheme = true;
         }else{
 
             $("#tema").attr("src", "imgs/dark-mode.png");
 
+            // mudando as cores para o tema claro
             $("body").css({
                 "background-color": "#fff",
-                "color": "black"
+                "color": "#1c1d1c"
             });
 
             $("aside").css({

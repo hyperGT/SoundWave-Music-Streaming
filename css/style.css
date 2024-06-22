@@ -4,6 +4,10 @@ html{
     height: 100%;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     font-family: 'Satoshi-Variable';
     color: white;
@@ -72,13 +76,16 @@ input::placeholder {
     font-family: 'Satoshi-Regular';
   }
 
+/*conteúdo principal*/
 main{
-    width: 70%;
+    width: 80%;
     position: relative;
     padding: 6em 2em 2em;
-    height: 800px;
+    height: 880px;
+    align-items: center;
 }
 
+/*rodapé*/
 footer{
     width: 100%;
     padding: 1em 0;    
@@ -97,20 +104,31 @@ aside{
     z-index: -1;
 }
 
+/*container dos cards e imagens principais*/
 .container{
     width: 100%;
     display: flex;
     flex-wrap: wrap;        
-    margin-top: 4em;
+    margin-top: 2em;
     margin-left: 1em;
 }
 
+/*alterando as imagens dos cards*/
 .card{    
-    margin-left: 2em;
     width: 150px; 
     height: 150px;
-    margin-top: 2em;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);
+    margin-left: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 10px 0 rgba(0, 0, 0, 0.20);
+    opacity: 0.5;    
+}
+
+.card img{
+    border-radius: 5px;
+}
+
+.card:hover{
+    opacity: 1.0;
 }
 
 /*campo dos botões*/
