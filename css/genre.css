@@ -1,13 +1,40 @@
-@import url('satoshi.css'); /*Importando a fonte*/
+@import url('satoshi.css'); /*Importando o css da fonte*/
 
+body{
+    display: flex;
+    flex-direction: column;    
+}
 
+/*conteúdo principal*/
+main{
+    width: 80%;
+    position: relative;
+    padding: 6em 2em 2em;
+    height: 880px;
+    align-items: center;
+    overflow: scroll;
+}
+
+/*Barra lateral*/
+aside{
+    width: 250px;    
+    height: 100%;
+    padding: 6em 1em;
+    background-color:#333;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    /*z-index: -1;*/
+}
 
 #tabela-artistas{
-    width: 100%;  
-    margin-top: 3em;  
+    /*background-color: aquamarine;*/
+    width: 100%;
+    margin-top: 3em;
 }
 
 #tabela-artistas td{
+    /*background-color: violet;*/
     text-align: center;      
 }
 

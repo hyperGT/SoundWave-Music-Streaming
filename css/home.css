@@ -1,0 +1,49 @@
+@import url('satoshi.css'); /*Importando a fonte*/
+
+/*conteúdo principal*/
+main{
+    width: 80%;
+    position: relative;
+    padding: 6em 2em 2em;
+    height: 880px;
+    align-items: center;
+}
+
+/*Barra lateral*/
+aside{
+    width: 20%;
+    height: 100%;
+    background-color:#333;
+    position: fixed;
+    top:0;
+    right: 0;
+    padding: 6em 1em;
+    /*z-index: -1;*/
+}
+
+/*container dos cards e imagens principais*/
+.container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;        
+    margin-top: 2em;
+    margin-left: 1em;
+}
+
+/*alterando as imagens dos cards*/
+.card{    
+    width: 150px; 
+    height: 150px;
+    margin-left: 2em;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 10px 0 rgba(0, 0, 0, 0.20);
+    opacity: 1.0;    
+}
+
+.card img{
+    border-radius: 5px;
+}
+
+.card:hover{
+    opacity: 0.5;
+}

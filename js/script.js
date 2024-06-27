@@ -29,7 +29,7 @@ var hidden = false
 
 var darkTheme = true;
     $("#mudar-tema").click(function() {
-        if(darkTheme==false){ // se o modo escuro não estiver ativado
+        if(darkTheme==false){ // verificando se o escuro está ativado
 
             // trocando o atributo src das imagens dos botões da nav bar
             $("#tema").attr("src", "imgs/buttons/sun.png");            
@@ -59,7 +59,8 @@ var darkTheme = true;
             });
                         
             darkTheme = true;
-        }else{
+
+        }else{ // darktheme está ativo
 
             // trocando o atributo src da imagem do botão trocar tema
             $("#tema").attr("src", "imgs/buttons/moon.png");
@@ -105,44 +106,39 @@ function barraNotSel(){
     $("#barraDePesquisa").css("border", "hidden");
 }
 
-
-
 /**
- * Ativar aside com lista e controle de músicas
+ * Eventos
+ * Ativar lista ordenada de musicas do album + audio controler quando clicar 
+ * em alguma musica
  */
-/*
-function off(){
-    $(".lista-de-musicas").css("display", "none");
-}
-
-function musicOn(){
-    $(".lista-de-musicas").toggle();
-}*/
 
 document.addEventListener('DOMContentLoaded', function(){
-
-    // declaração de variaveis
+    
     const audioPlayer = document.getElementById("audioPlayer"); 
     const audioSource = document.getElementById("audioSource");
     const playlist = document.querySelector(".lista-de-musicas");
-    const musicLinks = document.querySelectorAll(".lista-de-musicas a");
+    const musicLinks = document.querySelectorAll(".lista-de-musicas a"); 
 
-    // escondendo a lista de musicas e o controlado de audio
+    // escondendo a lista de musicas e o controlador de audio
     playlist.style.display = "none";
     audioPlayer.style.display="none";
 
-    // mostrando tudo ao clicar num album
-    albumLink.addEventListener("click", function(){
-        playlist.style.display = "block";
+    // mostrando tudo ao clicar em um album (atualmente só o Thriller disponivel para teste)
+    albumLinkTeste.addEventListener("click", function(){
+        playlist.style.display = "block"; 
         audioPlayer.style.display = "block";
-    });    
+                
+    });
 
-    
     musicLinks.forEach(link => {
+        // quando clicar na âncora inicia a função
         link.addEventListener("click", function(event){
             event.preventDefault();
-            const musicSrc = this.getAttribute("data-src");
+            // guardando na variavel musicSrc o caminho em que a musica está armazenada 
+            const musicSrc = this.getAttribute("data-src"); 
+            // mudando o atributo src do componente audioSource para o caminho da musica
             audioSource.src = musicSrc;
+            // tocando a musica chamando as funções "carregar" e "play" para tocar a música
             audioPlayer.load();
             audioPlayer.play();
         });

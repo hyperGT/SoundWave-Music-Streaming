@@ -2,12 +2,131 @@
 
 /*Estilização padrão*/
 
-html{
+/*html*/
+html, body{
     height: 100%;
 }
 
+/*aplicado em todo documento*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*estilização do body*/
+body{
+    font-family: 'Satoshi-Variable';
+    color: white;
+    /*box-sizing: border-box;*/
+    background-color: #0e0e0e;
+    display: flex;
+    flex-direction: column;
+    overflow:hidden;
+}
+
+main, aside{
+    overflow-y: auto; /* overflow vertical com barra de rolagem */
+}
+
+/*header e footer*/
+header, footer{
+    background-color: #333;
+    color: #fff; 
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; /*header e footer acima de tudo e todos*/
+}
+
+header{
+    height: 80px;
+    width:100%;    
+    padding: 10px;
+    display: flex;       
+    flex-direction: row;        
+}
+
+/*rodapé*/
+footer{
+    height: 80px;
+    width: 100%;
+    padding: 1em 0;  
+    text-align: center;  
+}
+
+header a{
+    display: flex;    
+    text-decoration: none;    
+    color: white;
+}
+
+/*barra de navegação*/
+nav{
+    display: flex;     
+    /*background-color: aquamarine;*/
+    width: 80%;
+    float: right;       
+    align-items: center;  
+    margin-left: 10em;
+}
+
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.pesquisar li{
+    margin-left: 1em;
+}
+
+.pesquisar img{
+    width:20px; 
+    height:20px;
+}
+
+#barraDePesquisa{
+    padding: 0.5em;
+    font-size: 1em;    
+    width: 400px;
+    background-color: #1c1d1c;
+}
+
+input::placeholder {
+    color:white;
+    font-family: 'Satoshi-Regular';
+  }
+
+
+
+/*campo dos botões*/
+.options{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;  
+    margin-right: 5em;
+    position: absolute;    
+    right: 0;
+}
+/*
+.options li{
+    width: 50px;
+}*/
+
+.options button{
+    text-decoration: none;
+    border: transparent; 
+    background-color: transparent;       
+    cursor: pointer;  
+    width: 50px;
+    height: 50px;
+}
+
+.options button:hover{
+    background-color: rgba(220, 220, 220, 0.4);
+    border-radius: 50%;
 }
