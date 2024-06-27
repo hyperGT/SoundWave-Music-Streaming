@@ -5,6 +5,7 @@
         <title>SoundWave/Pop/Michael Jackson</title>
         <link rel="icon" type="image/x-icon" href="imgs/logo/logo_soundwave.png">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/artist.css">
         <link rel="stylesheet" href="css/satoshi.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -47,9 +48,23 @@
             </div>
         </nav>
     </header>
-
+    
     <aside>
-        <p>Texto de exemplo</p>
+        <ol class="lista-de-musicas">
+            <audio src=""></audio>
+            <li><a href="#" data-src="music/Michael Jackson (1982) Thriller/01 - Wanna Be Startin' Somethin'.mp3">Wanna Be Startin' Somethin'</a></li>
+            <li><a href="#" data-src="music/Michael Jackson (1982) Thriller/02 - Baby Be Mine.mp3">Baby Be Mine</a></li>
+            <li><a href="#" data-src="music/Michael Jackson (1982) Thriller/03 - The Girl Is Mine.mp3">The Girl Is Mine</a></li>
+            <li><a href="#" data-src="music/Michael Jackson (1982) Thriller/04 - Thriller.mp3">Thriller</a></li>
+            <li><a href="#" data-src="music/Michael Jackson (1982) Thriller/05 - Beat It (Single Version).mp3">Beat It (Single Version)</a></li>
+            <li><a href="#" data-src="music/Michael Jackson (1982) Thriller/06 - Billie Jean.mp3">Billie Jean</a></li>  
+            <li><a href="#" data-src="music/Michael Jackson (1982) Thriller/07 - Human Nature.mp3">Human Nature</a></li>
+            <li><a href="#" data-src="music/Michael Jackson (1982) Thriller/08 - P.Y.T. (Pretty Young Thing).mp3">P.Y.T. (Pretty Young Thing)</a></li>  
+            <li><a href="#" data-src="music/Michael Jackson (1982) Thriller/09 - The Lady in My Life.mp3">The Lady in My Life</a></li>
+        </ol>        
+        <audio id="audioPlayer" controls>
+            <source id="audioSource" src="" type="audio/mpeg">
+        </audio>
     </aside>
 
     <main>
@@ -62,10 +77,45 @@
         </div>
 
         </section> <!--fim perfil-->
-        <section class="albuns">
+        <section class="discografias">
             <table class="tabela">
-                <th>Albuns</th>
-                <tr></tr>
+                <tr>
+                    <!--1-->
+                    <td class="album">
+                        <a id="albumLink" href="#" target="_self" onclick="musicOn()">
+                                <img src="imgs/michael-jackson/Xscape.jpg" alt="Xscape Album">
+                                <figcaption>Xscape <br> 2014</figcaption>
+                        </a>
+                    </td>
+                    <!--2-->
+                    <td class="album">
+                        <a id="albumLink" href="#" target="_self" onclick="musicOn()">
+                            <img src="imgs/michael-jackson/Thriller.jpg" alt="Thriller Album">
+                            <figcaption>Thriller <br> 2022</figcaption>
+                        </a>
+                    </td>
+                    <!--3-->
+                    <td class="album">
+                        <a id="albumLink" href="#" target="_self" onclick="musicOn()">
+                            <img src="imgs/michael-jackson/Thriller.jpg" alt="Thriller Album">
+                            <figcaption>Thriller <br> 2022</figcaption>
+                        </a>
+                    </td>
+                    <!--4-->
+                    <td class="album">
+                        <a id="albumLink" href="#" target="_self" onclick="musicOn()">
+                            <img src="imgs/michael-jackson/" alt="Thriller Album">
+                            <figcaption>Thriller <br> 2022</figcaption>
+                        </a>
+                    </td>
+                    <!--5-->
+                    <td class="album">
+                        <a id="albumLink" href="#" target="_self" onclick="musicOn()">
+                            <img src="imgs/michael-jackson/Thriller.jpg" alt="Thriller Album">
+                            <figcaption>Thriller <br> 2022</figcaption>
+                        </a>
+                    </td>
+                </tr>
             </table>
         </section>
     </main>
@@ -73,6 +123,8 @@
     <footer>
         <p>&copy; 2024 SoundWave</p>
     </footer>  
+
+    
     
 </body>
 </html>

@@ -1,15 +1,5 @@
 @import url('satoshi.css'); /*Importando a fonte*/
 
-html{
-    height: 100%;
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body{
     font-family: 'Satoshi-Variable';
     color: white;
@@ -23,6 +13,7 @@ header, footer{
     color: #fff; 
     align-items: center;
     justify-content: center;
+    z-index: 1000;
 }
 
 header{
@@ -78,7 +69,6 @@ nav ul{
     background-color: #1c1d1c;
 }
 
-
 input::placeholder {
     color:white;
     font-family: 'Satoshi-Regular';
@@ -109,7 +99,7 @@ aside{
     top:0;
     right: 0;
     padding: 6em 1em;
-    z-index: -1;
+    /*z-index: -1;*/
 }
 
 /*container dos cards e imagens principais*/

@@ -42,6 +42,46 @@ main{
     height: 35%;
 }
 
-.albuns{
+.discografia{
     padding: 3em 4em 2em;
 }
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.album{
+    padding: 5em;
+}
+
+.album img{
+    width: 200px;
+    height: 200px;
+}
+
+a img figcaption{
+    font-size: small;
+    text-decoration: none;
+}
+
+/*Barra lateral com lista de musicas*/
+aside ol{
+    padding: 1em 1em;
+}
+
+#audioPlayer{
+    margin: -1em;
+    position: absolute;
+
+}
+
+aside .lista-de-musicas li a:hover{
+    border: 1px solid gray;
+    opacity: 0.7;
+}
+/*
+.lista-de-musicas ol li{
+    margin-right: 1em;
+}
+*/

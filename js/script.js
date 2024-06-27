@@ -1,12 +1,5 @@
-$(function() {
-    
-    /*$("#barraDePesquisa").focus(function() {
-        $("#barraDePesquisa").css({
-            "border-width": "5px", 
-            "border-style": "solid", 
-            "border-color": "white"
-        });
-    });*/  
+$(function() {    
+
 
 var hidden = false
     $("#esconder-aside").click(function() {
@@ -111,3 +104,47 @@ function barraSel(){
 function barraNotSel(){
     $("#barraDePesquisa").css("border", "hidden");
 }
+
+
+
+/**
+ * Ativar aside com lista e controle de músicas
+ */
+/*
+function off(){
+    $(".lista-de-musicas").css("display", "none");
+}
+
+function musicOn(){
+    $(".lista-de-musicas").toggle();
+}*/
+
+document.addEventListener('DOMContentLoaded', function(){
+
+    // declaração de variaveis
+    const audioPlayer = document.getElementById("audioPlayer"); 
+    const audioSource = document.getElementById("audioSource");
+    const playlist = document.querySelector(".lista-de-musicas");
+    const musicLinks = document.querySelectorAll(".lista-de-musicas a");
+
+    // escondendo a lista de musicas e o controlado de audio
+    playlist.style.display = "none";
+    audioPlayer.style.display="none";
+
+    // mostrando tudo ao clicar num album
+    albumLink.addEventListener("click", function(){
+        playlist.style.display = "block";
+        audioPlayer.style.display = "block";
+    });    
+
+    
+    musicLinks.forEach(link => {
+        link.addEventListener("click", function(event){
+            event.preventDefault();
+            const musicSrc = this.getAttribute("data-src");
+            audioSource.src = musicSrc;
+            audioPlayer.load();
+            audioPlayer.play();
+        });
+    });
+});
