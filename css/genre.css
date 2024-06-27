@@ -1,23 +1,21 @@
 @import url('satoshi.css'); /*Importando o css da fonte*/
 
-body{
-    display: flex;
-    flex-direction: column;    
-}
+
 
 /*conteúdo principal*/
 main{
     width: 80%;
+    padding: 0 2em 2em;
     position: relative;
-    padding: 6em 2em 2em;
     height: 880px;
     align-items: center;
-    overflow: scroll;
+    /*background-color: aqua;*/
+    /*flex: 2; */
 }
 
 /*Barra lateral*/
 aside{
-    width: 250px;    
+    width: 20%;    
     height: 100%;
     padding: 6em 1em;
     background-color:#333;
