@@ -4,26 +4,10 @@
 
 /*conteúdo principal*/
 main{
-    width: 80%;
-    padding: 0 2em 2em;
-    position: relative;
+    padding: 5em 2em 2em;
     height: 880px;
-    align-items: center;
-    /*background-color: aqua;*/
-    /*flex: 2; */
 }
 
-/*Barra lateral*/
-aside{
-    width: 20%;    
-    height: 100%;
-    padding: 6em 1em;
-    background-color:#333;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    /*z-index: -1;*/
-}
 
 #tabela-artistas{
     /*background-color: aquamarine;*/

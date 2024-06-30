@@ -6,16 +6,19 @@ var hidden = false
         $("aside").toggle();  
         
         if(hidden==false){
-            $("main").css("width", "100%");
 
+            $(".separar").css("width", "100%");
+            /*$("main").css("width", "100%");*/
+/*
             $(".container").css({
                 "width": "80%",
                 "margin-left": "10em"                
             });   
-            
+  */          
             hidden = true;
         }else{
-            $("main").css("width", "80%");
+            $(".separar").css("width", "80%");
+            /*$("main").css("width", "80%");*/
 
             $(".container").css({
                 "width": "100%", 

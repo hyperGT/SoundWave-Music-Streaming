@@ -12,25 +12,7 @@
 /*conteúdo principal*/
 
 main{
-    width: 80%;
     padding: 0 2em 2em;
-    position: relative;
-    height: 880px;
-    align-items: center;
-    /*background-color: aqua;*/
-    /*flex: 2; */
-}
-
-/*Barra lateral*/
-aside{
-    width: 20%;    
-    height: 100%;
-    padding: 6em 1em;
-    background-color:#333;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    /*z-index: -1;*/
 }
 
 .banner {
@@ -66,22 +48,17 @@ aside{
 }
 
 .perfil{
-    /*background-color: aqua;*/
-    height: 35%;
+    height: 300px;
 }
 
 .discografia{    
     width: 100%;
-    margin-top: 10em;
     align-items: center;
     justify-content: center;  
-    /*background-color: green;     */
 }
 
 #albums{
     width: 100%;
-    margin-top: 3em;
-    /*background-color: goldenrod;*/
 }
 
 a{

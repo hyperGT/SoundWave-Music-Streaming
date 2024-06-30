@@ -25,7 +25,22 @@ body{
     overflow:hidden;
 }
 
-main, aside{
+/*Barra lateral*/
+aside{
+    width: 20%;
+    height: 100%;
+    background-color:#333;
+    position: absolute;
+    right: 0;
+    padding: 6em 1em;
+    /*z-index: -1;*/
+}
+
+.separar {
+    width: 80%;    
+}
+
+.separar, aside{    
     overflow-y: auto; /* overflow vertical com barra de rolagem */
 }
 
@@ -54,17 +69,17 @@ header a{
 
 /*rodapé*/
 footer{
-    height: 80px;
+    height: 120px;
     position: relative;
     width: 100%;
     padding: 1em 0;  
-    text-align: center;  
+    text-align: center;      
 }
 
 
 /*barra de navegação*/
 nav{
-    display: flex;     
+    display: flex;
     /*background-color: aquamarine;*/
     width: 80%;
     float: right;       
