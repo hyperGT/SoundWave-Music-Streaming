@@ -46,19 +46,21 @@ header{
     flex-direction: row;        
 }
 
-/*rodapé*/
-footer{
-    height: 80px;
-    width: 100%;
-    padding: 1em 0;  
-    text-align: center;  
-}
-
 header a{
     display: flex;    
     text-decoration: none;    
     color: white;
 }
+
+/*rodapé*/
+footer{
+    height: 80px;
+    position: relative;
+    width: 100%;
+    padding: 1em 0;  
+    text-align: center;  
+}
+
 
 /*barra de navegação*/
 nav{
