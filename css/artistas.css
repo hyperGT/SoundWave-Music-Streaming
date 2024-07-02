@@ -1,13 +1,17 @@
 @import url('satoshi.css'); /*Importando o css da fonte*/
 
-
-
 /*conteúdo principal*/
 main{
     padding: 5em 2em 2em;
-    height: 880px;
 }
 
+aside section{
+    margin-top: 2em;
+}
+
+aside section article{
+    margin-top: 2em;
+}
 
 #tabela-artistas{
     /*background-color: aquamarine;*/
@@ -23,7 +27,7 @@ main{
 .artista-card {
     /*vertical-align: middle;*/
     /*background-color: brown;*/
-    padding: 15px;
+    padding: 20px;
 }
 
 .artista-card a:hover{

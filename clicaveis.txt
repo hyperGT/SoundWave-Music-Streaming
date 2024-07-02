@@ -1,0 +1,17 @@
+# SoundWave-Music-Streaming
+
+
+## Clicáveis: 
+
+
+### pagina 1: Home
+categorias clicáveis: Pop
+
+
+### pagina 2: 
+artistas clicaveis: Michael Jackson
+
+
+### pagina 3: 
+Albuns clicáveis: Thriller - 1982
+(segunda linha e ultima coluna)

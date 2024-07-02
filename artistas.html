@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SoundWave/Pop</title>
+    <link rel="icon" type="image/x-icon" href="imgs/logo/logo_soundwave.png">
+    <link rel="stylesheet" href="css/artistas.css">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/satoshi.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <a id="logo" href="index.html">
+            <img style="margin-right: 0.5em;" src="imgs/logo/logo_soundwave.png" alt="Logo" width="50" height="50">
+            <h1>SoundWave</h1>
+        </a>
+
+        <nav>
+            <div class="pesquisar">
+                <!--Barra de pesquisa-->
+                <ul>
+                    <li>
+                        <input type="text" id="barraDePesquisa" placeholder="Pesquisar..." onfocus="barraSel()"
+                            onfocusout="barraNotSel()">
+                    </li>
+                    <li>
+                        <img id="lupa" src="imgs/icons/search dark.png" alt="lupa">
+                    </li>
+                </ul>
+            </div>
+            <!--botões para configurações de estilo/layout-->
+            <div class="options">
+                <ul>
+                    <li>
+                        <button id="mudar-tema">
+                            <img id="tema" src="imgs/icons/sun.png" alt="Alterar tema" width="25px" height="25px">
+                        </button>
+                    </li>
+                    <li>
+                        <button id="esconder-aside">
+                            <img id="esconder" src="imgs/icons/burger dark.png" alt="Esconder barra lateral"
+                                width="25px" height="25px">
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <aside>
+        <section id="music">
+            <h1>Status:</h1>
+            <p>Nenhuma música tocando no momento</p>
+        </section>
+        <section id="news">
+            <article>
+                <h1>Melhores albuns de todos os tempos</h1>
+                <ol style="margin-left: 1em;">
+                    <li style="margin-top: 1em;">
+                        <h1>Nevermind – Nirvana (1991)</h1>
+                        <p>Lançado em 1991, Nevermind é o segundo álbum de estúdio do Nirvana, um dos grandes nomes do
+                            grunge e do rock alternativo.
+
+                            “Smells Like Teen Spirit”, um dos hits mais conhecidos da banda até hoje, foi apresentado
+                            como single neste disco.
+
+                            A canção foi indicada ao Grammy em 1993, na categoria Melhor Canção de Rock. O álbum também
+                            recebeu uma indicação na categoria Melhor Álbum de Música Alternativa em 1992. </p>
+                    </li>
+
+                    <li style="margin-top: 1em;">
+                        <h1>Abbey Road – The Beatles (1969)</h1>
+                        <p>
+                            Você já deve ter visto por aí a clássica foto dos Beatles atravessando uma rua, certo? Essa
+                            rua é a Abbey Road, localizada em Londres, e a foto é capa para o álbum da banda que leva o
+                            mesmo nome.
+
+                            Lançado em 1969, o disco apresentou sucessos como “Here Comes the Sun” e “Something”, que
+                            foram regravados por vários artistas ao longo dos anos.
+
+                            O trabalho ganhou a categoria Álbum Induzido no Grammy Hall of Fame em 1995, uma premiação
+                            especial do Grammy Awards, e não poderia ficar de fora dos melhores álbuns de todos os
+                            tempos.
+                        </p>
+                    </li>
+                    <li style="margin-top: 1em;">
+                        <h1>Pet Sounds – The Beach Boys (1966)</h1>
+                        <p>
+                            Pet Sounds foi um marco na carreira do The Beach Boys e na história da música. Neste
+                            trabalho, a banda apresentou um som mais pop com hits como “Wouldn’t It Be Nice”.
+
+                            Ao lançar o trabalho em 1966, o grupo inovou ao trazer arranjos diferentes, incluindo até
+                            sons cotidianos nas produções, como latidos, sinos de bicicleta e campainhas.
+
+                            Hoje, mais de 50 anos após o lançamento do disco, muito se fala sobre a influência de Pet
+                            Sounds para o gênero pop.
+                        </p>
+                    </li>
+                    <li style="margin-top: 1em;">
+                        <h1>Thriller – Michael Jackson (1982)</h1>
+                        <p>
+                            Quem nunca ouviu falar de Thriller, disco lançado por Michael Jackson em 1982? Esse clássico
+                            dos anos 80 é conhecido até hoje, sendo a faixa que leva o nome do álbum um dos maiores hits
+                            do cantor.
+
+                            Além de “Thriller”, o disco ainda traz sucessos como “Beat It” e “Billie Jean”.
+
+                            Michael Jackson recebeu nada mais nada menos do que oito Grammys pela produção, incluindo o
+                            de Álbum do Ano. Esse não podia ficar de fora dos melhores álbuns de todos os tempos, não é
+                            mesmo?
+                        </p>
+                    </li>
+                    <li style="margin-top: 1em;">
+                        <h1>Rumours – Fleetwood Mac (1977)</h1>
+                        <p>
+                            Uma das grandes bandas de rock internacional, Fleetwood Mac lançou muitos trabalhos
+                            incríveis ao longo da carreira e Rumours é um dos principais destaques da banda.
+
+                            Lançado em 1977, o disco ganhou o Grammy de Melhor Álbum do Ano em 1978, com “The Chain”,
+                            “Go Your Own Way” e outros hits que ficaram para a história da música, marcando o trabalho
+                            entre os melhores álbuns de todos os tempos.
+                        </p>
+                    </li>
+                </ol>
+            </article>
+        </section>
+    </aside>
+
+    <div class="separar">
+        <main>
+            <h3>Seus artistas favoritos em um só lugar.</p>
+                <section>
+
+                    <table id="tabela-artistas">
+                        <!--Primeira linha-->
+                        <tr>
+                            <td class="artista-card">
+                                <a href="perfil-artista.html" target="_self">
+                                    <img src="imgs/artistas-pop/Michael Jackson 100px.jpg" alt="Michael Jackson">
+                                    <figcaption>Michael Jackson</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Cyndi Lauper.jpg" alt="Cyndi Lauper">
+                                    <figcaption>Cyndi Lauper</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Ariana Grande.jpg" alt="Ariana Grande">
+                                    <figcaption>Ariana Grande</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Britney Spears.jpg" alt="Britney Spears">
+                                    <figcaption>Britney Spears</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Dua Lipa.jpg" alt="Dua Lipa">
+                                    <figcaption>Dua Lipa</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Bruno Mars.jpg" alt="Bruno Mars">
+                                    <figcaption>Bruno Mars</figcaption>
+                                </a>
+                            </td>
+                        </tr>
+                        <!--segunda linha-->
+                        <tr>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Jennifer Lopez.jpg" alt="Jennifer Lopez">
+                                    <figcaption>Jennifer Lopez</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Billie Eilish.jpg" alt="Billie Eilish">
+                                    <figcaption>Billie Eilish</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Harry Styles.jpg" alt="Harry Styles">
+                                    <figcaption>Harry Styles</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Madonna.jpg" alt="Madonna">
+                                    <figcaption>Madonna</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Lady Gaga.jpg" alt="Lady Gaga">
+                                    <figcaption>Lady Gaga</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Shakira.jpg" alt="Shakira">
+                                    <figcaption>Shakira</figcaption>
+                                </a>
+                            </td>
+                        </tr>
+
+                        <!--Terceira linha-->
+                        <tr>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Justin Timberlake.jpg" alt="Justin Timberlake">
+                                    <figcaption>Justin Timberlake</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Beyoncé.jpg" alt="Beyoncé">
+                                    <figcaption>Beyoncé</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Rihanna.jpg" alt="Rihanna">
+                                    <figcaption>Rihanna</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Katy Perry.jpg" alt="Katy Perry">
+                                    <figcaption>Katy Perry</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/The Weeknd.jpg" alt="The Weeknd">
+                                    <figcaption>The Weeknd</figcaption>
+                                </a>
+                            </td>
+                            <td class="artista-card">
+                                <a href="#" target="_self">
+                                    <img src="imgs/artistas-pop/Whitney Houston.jpg" alt="Whitney Houston">
+                                    <figcaption>Whitney Houston</figcaption>
+                                </a>
+                            </td>
+                        </tr>
+                    </table> <!--fim tabela de artistas-->
+                </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 SoundWave</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>

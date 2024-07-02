@@ -29,11 +29,14 @@ body{
 aside{
     width: 20%;
     height: 100%;
-    background-color:#333;
+    background-color:#222121;
     position: absolute;
     right: 0;
     padding: 6em 1em;
-    /*z-index: -1;*/
+}
+
+a{
+    color: white;
 }
 
 .separar {
@@ -42,6 +45,10 @@ aside{
 
 .separar, aside{    
     overflow-y: auto; /* overflow vertical com barra de rolagem */
+}
+
+#logo:hover{
+    opacity: 0.8;
 }
 
 /*header e footer*/
@@ -69,26 +76,28 @@ header a{
 
 /*rodapé*/
 footer{
-    height: 120px;
+    height: 80px;
     position: relative;
     width: 100%;
     padding: 1em 0;  
-    text-align: center;      
+    text-align: center; 
 }
 
 
 /*barra de navegação*/
 nav{
     display: flex;
-    /*background-color: aquamarine;*/
     width: 80%;
     float: right;       
     align-items: center;  
     margin-left: 10em;
 }
 
-nav ul{
+ul{
     list-style: none;
+}
+
+nav ul{
     margin: 0;
     padding: 0;
     display: flex;
@@ -116,8 +125,6 @@ input::placeholder {
     font-family: 'Satoshi-Regular';
   }
 
-
-
 /*campo dos botões*/
 .options{
     width: 100px;
@@ -129,10 +136,6 @@ input::placeholder {
     position: absolute;    
     right: 0;
 }
-/*
-.options li{
-    width: 50px;
-}*/
 
 .options button{
     text-decoration: none;
